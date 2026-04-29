@@ -64,15 +64,12 @@ LISTEN_PORT = 10800
 # This protects the local proxy itself, not the remote server.
 # Personal note: keeping SOCKS5_AUTH = true now that I sometimes bind on 0.0.0.0 for LAN use.
 # Remember to change the default username/password before doing so.
-SOCKS5_AUTH = false
+# Personal note: switched SOCKS5_AUTH to true and updated credentials — default user/pass is
+# way too obvious and I got burned leaving it open on LAN once. Don't repeat my mistake.
+SOCKS5_AUTH = true
 SOCKS5_USER = "master_dns_vpn"
 SOCKS5_PASS = "master_dns_vpn"
 
 # ------------------------------------------------------------------------------
 # 3) Local DNS Service
-# What this section does:
-# - Controls the optional built-in local DNS listener.
-# - Controls local DNS cache size, TTL, pending timeout, and fragment assembly.
-# ------------------------------------------------------------------------------
-
-# When true, the client expos
+# What this sectio

@@ -67,9 +67,7 @@ LISTEN_PORT = 10800
 # Personal note: switched SOCKS5_AUTH to true and updated credentials — default user/pass is
 # way too obvious and I got burned leaving it open on LAN once. Don't repeat my mistake.
 SOCKS5_AUTH = true
-SOCKS5_USER = "master_dns_vpn"
-SOCKS5_PASS = "master_dns_vpn"
-
-# ------------------------------------------------------------------------------
-# 3) Local DNS Service
-# What this sectio
+SOCKS5_USER = "changeme"
+# Personal note: use something long and random here; I keep mine in a password manager.
+# Example: openssl rand -base64 18
+SOCKS5_PASS = ""
